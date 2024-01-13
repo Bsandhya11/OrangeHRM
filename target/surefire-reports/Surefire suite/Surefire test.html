@@ -1,0 +1,263 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jan 11 20:52:40 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>145 seconds (145831 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: TestRunner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Add new Functionality", "Test Orange HRM Application"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (8b9c9dd1e8de9bdef085f9763d3262cc)] -&gt; xpath: //button[text()=&apos; Yes, Delete &apos;]] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praf0\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61238/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b9c9dd1e8de9bdef085f9763d3262cc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at UtilityLayer.Wait.visibilityStatus(Wait.java:17)
+	at UtilityLayer.Wait.click(Wait.java:35)
+	at PageLayer.PIMPage.selectAndClickonDelete(PIMPage.java:99)
+	at Steps.OrangeHRMSteps.user_select_searched_employee_and_click_on_delete(OrangeHRMSteps.java:95)
+	at ?.user select searched employee and click on delete(file:///C:/Users/praf0/OneDrive/Desktop/Automation%20Testing%2021Oct2023/UI%20Framework%20Workspace/OrangeHRMBDD/AllFeatureFiles/oranghrm.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1201324747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1201324747'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (8b9c9dd1e8de9bdef085f9763d3262cc)] -&gt; xpath: //button[text()=&apos; Yes, Delete &apos;]] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praf0\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61238/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b9c9dd1e8de9bdef085f9763d3262cc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at UtilityLayer.Wait.visibilityStatus(Wait.java:17)
+	at UtilityLayer.Wait.click(Wait.java:35)
+	at PageLayer.PIMPage.selectAndClickonDelete(PIMPage.java:99)
+	at Steps.OrangeHRMSteps.user_select_searched_employee_and_click_on_delete(OrangeHRMSteps.java:95)
+	at ?.user select searched employee and click on delete(file:///C:/Users/praf0/OneDrive/Desktop/Automation%20Testing%2021Oct2023/UI%20Framework%20Workspace/OrangeHRMBDD/AllFeatureFiles/oranghrm.feature:19)
+</pre></div></td>
+<td>62</td>
+<td>TestRunner.RunnerTest@1460a8c0</td></tr>
+<tr>
+<td title='TestRunner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: TestRunner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate logout functionality", "Test Orange HRM Application"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p class=&quot;oxd-userdropdown-name&quot; data-v-bdd6d943=&quot;&quot;&gt;...&lt;/p&gt; is not clickable at point (1566, 33). Other element would receive the click: &lt;div class=&quot;oxd-dialog-container-default&quot; data-v-bcfca726=&quot;&quot; data-v-126e9e0f=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=119.0.6045.106)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b9c9dd1e8de9bdef085f9763d3262cc, clickElement {id=EEF24E9A9C88806225847F3B7FF9F310_element_523}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praf0\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61238/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8b9c9dd1e8de9bdef085f9763d3262cc)] -&gt; xpath: //img[@alt=&apos;profile picture&apos;]/following-sibling::p]
+Session ID: 8b9c9dd1e8de9bdef085f9763d3262cc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at UtilityLayer.Wait.click(Wait.java:35)
+	at PageLayer.PIMPage.clickOnProfile(PIMPage.java:107)
+	at Steps.OrangeHRMSteps.user_click_on_profile_image(OrangeHRMSteps.java:108)
+	at ?.user click on profile image(file:///C:/Users/praf0/OneDrive/Desktop/Automation%20Testing%2021Oct2023/UI%20Framework%20Workspace/OrangeHRMBDD/AllFeatureFiles/oranghrm.feature:30)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1963590892", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1963590892'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p class=&quot;oxd-userdropdown-name&quot; data-v-bdd6d943=&quot;&quot;&gt;...&lt;/p&gt; is not clickable at point (1566, 33). Other element would receive the click: &lt;div class=&quot;oxd-dialog-container-default&quot; data-v-bcfca726=&quot;&quot; data-v-126e9e0f=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=119.0.6045.106)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b9c9dd1e8de9bdef085f9763d3262cc, clickElement {id=EEF24E9A9C88806225847F3B7FF9F310_element_523}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praf0\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61238/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8b9c9dd1e8de9bdef085f9763d3262cc)] -&gt; xpath: //img[@alt=&apos;profile picture&apos;]/following-sibling::p]
+Session ID: 8b9c9dd1e8de9bdef085f9763d3262cc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at UtilityLayer.Wait.click(Wait.java:35)
+	at PageLayer.PIMPage.clickOnProfile(PIMPage.java:107)
+	at Steps.OrangeHRMSteps.user_click_on_profile_image(OrangeHRMSteps.java:108)
+	at ?.user click on profile image(file:///C:/Users/praf0/OneDrive/Desktop/Automation%20Testing%2021Oct2023/UI%20Framework%20Workspace/OrangeHRMBDD/AllFeatureFiles/oranghrm.feature:30)
+</pre></div></td>
+<td>1</td>
+<td>TestRunner.RunnerTest@1460a8c0</td></tr>
+<tr>
+<td title='TestRunner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: TestRunner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Add new Functionality", "Test Orange HRM Application"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;oxd-topbar-body-nav-tab-item&quot; href=&quot;#&quot;&gt;...&lt;/a&gt; is not clickable at point (598, 91). Other element would receive the click: &lt;div class=&quot;oxd-dialog-container-default--inner&quot; data-v-bcfca726=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=119.0.6045.106)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b9c9dd1e8de9bdef085f9763d3262cc, clickElement {id=EEF24E9A9C88806225847F3B7FF9F310_element_522}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praf0\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61238/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8b9c9dd1e8de9bdef085f9763d3262cc)] -&gt; xpath: //a[text()=&apos;Add Employee&apos;]]
+Session ID: 8b9c9dd1e8de9bdef085f9763d3262cc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at UtilityLayer.Wait.click(Wait.java:35)
+	at PageLayer.PIMPage.clickOnAddEmployeeButton(PIMPage.java:69)
+	at Steps.OrangeHRMSteps.user_click_on_add_employee(OrangeHRMSteps.java:65)
+	at ?.user click on add Employee(file:///C:/Users/praf0/OneDrive/Desktop/Automation%20Testing%2021Oct2023/UI%20Framework%20Workspace/OrangeHRMBDD/AllFeatureFiles/oranghrm.feature:14)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1434151479", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1434151479'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;oxd-topbar-body-nav-tab-item&quot; href=&quot;#&quot;&gt;...&lt;/a&gt; is not clickable at point (598, 91). Other element would receive the click: &lt;div class=&quot;oxd-dialog-container-default--inner&quot; data-v-bcfca726=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=119.0.6045.106)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b9c9dd1e8de9bdef085f9763d3262cc, clickElement {id=EEF24E9A9C88806225847F3B7FF9F310_element_522}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praf0\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61238/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8b9c9dd1e8de9bdef085f9763d3262cc)] -&gt; xpath: //a[text()=&apos;Add Employee&apos;]]
+Session ID: 8b9c9dd1e8de9bdef085f9763d3262cc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at UtilityLayer.Wait.click(Wait.java:35)
+	at PageLayer.PIMPage.clickOnAddEmployeeButton(PIMPage.java:69)
+	at Steps.OrangeHRMSteps.user_click_on_add_employee(OrangeHRMSteps.java:65)
+	at ?.user click on add Employee(file:///C:/Users/praf0/OneDrive/Desktop/Automation%20Testing%2021Oct2023/UI%20Framework%20Workspace/OrangeHRMBDD/AllFeatureFiles/oranghrm.feature:14)
+</pre></div></td>
+<td>1</td>
+<td>TestRunner.RunnerTest@1460a8c0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: TestRunner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Login functionality", "Test Orange HRM Application"</td>
+<td></td>
+<td>11</td>
+<td>TestRunner.RunnerTest@1460a8c0</td></tr>
+<tr>
+<td title='TestRunner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: TestRunner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Add new Functionality", "Test Orange HRM Application"</td>
+<td></td>
+<td>32</td>
+<td>TestRunner.RunnerTest@1460a8c0</td></tr>
+<tr>
+<td title='TestRunner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: TestRunner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate PIM Page Functionality", "Test Orange HRM Application"</td>
+<td></td>
+<td>1</td>
+<td>TestRunner.RunnerTest@1460a8c0</td></tr>
+<tr>
+<td title='TestRunner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: TestRunner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Add new Functionality", "Test Orange HRM Application"</td>
+<td></td>
+<td>33</td>
+<td>TestRunner.RunnerTest@1460a8c0</td></tr>
+</table><p>
+</body>
+</html>

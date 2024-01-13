@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 147.127 s <<< FAILURE! - in TestRunner.RunnerTest
+TestRunner.RunnerTest.runScenario["Validate Add new Functionality", "Test Orange HRM Application"](5)  Time elapsed: 62.699 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (8b9c9dd1e8de9bdef085f9763d3262cc)] -> xpath: //button[text()=' Yes, Delete ']] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praf0\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61238/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b9c9dd1e8de9bdef085f9763d3262cc
+
+TestRunner.RunnerTest.runScenario["Validate Add new Functionality", "Test Orange HRM Application"](6)  Time elapsed: 1.403 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a class="oxd-topbar-body-nav-tab-item" href="#">...</a> is not clickable at point (598, 91). Other element would receive the click: <div class="oxd-dialog-container-default--inner" data-v-bcfca726="">...</div>
+  (Session info: chrome=119.0.6045.106)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b9c9dd1e8de9bdef085f9763d3262cc, clickElement {id=EEF24E9A9C88806225847F3B7FF9F310_element_522}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praf0\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61238/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8b9c9dd1e8de9bdef085f9763d3262cc)] -> xpath: //a[text()='Add Employee']]
+Session ID: 8b9c9dd1e8de9bdef085f9763d3262cc
+
+TestRunner.RunnerTest.runScenario["Validate logout functionality", "Test Orange HRM Application"](7)  Time elapsed: 1.183 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <p class="oxd-userdropdown-name" data-v-bdd6d943="">...</p> is not clickable at point (1566, 33). Other element would receive the click: <div class="oxd-dialog-container-default" data-v-bcfca726="" data-v-126e9e0f="">...</div>
+  (Session info: chrome=119.0.6045.106)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b9c9dd1e8de9bdef085f9763d3262cc, clickElement {id=EEF24E9A9C88806225847F3B7FF9F310_element_523}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praf0\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61238/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8b9c9dd1e8de9bdef085f9763d3262cc)] -> xpath: //img[@alt='profile picture']/following-sibling::p]
+Session ID: 8b9c9dd1e8de9bdef085f9763d3262cc
+
